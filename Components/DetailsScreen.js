@@ -18,6 +18,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import AdressDetailsScreen from "./AdressDetailsScreen";
+import ParentsInfoScreen from './ParentsInfoScreen';
 
 const DetailsScreen =({route,navigation})=>{
     // const Stack = createNativeStackNavigator();
@@ -48,8 +49,9 @@ const DetailsScreen =({route,navigation})=>{
             {/* <InfoDetailsScreen/> */}
             <View className='flex-1 bg-red-400 border-4 border-red-500 rounded-t-3xl overflow-hidden'>
             <SubStack.Navigator>
-                <SubStack.Screen name="InfoDetails" component={InfoDetailsScreen} />
-                <SubStack.Screen name="AdressDetails" component={AdressDetailsScreen} />
+                <SubStack.Screen name="Bio Data" component={InfoDetailsScreen} />
+                <SubStack.Screen name="Adress Details" component={AdressDetailsScreen} />
+                <SubStack.Screen name="Parents Details" component={ParentsInfoScreen} />
             </SubStack.Navigator>
             </View>
             <TouchableHighlight

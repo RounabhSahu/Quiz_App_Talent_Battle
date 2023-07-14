@@ -1,4 +1,4 @@
-import React, { useState, useRef,useEffect } from "react";
+import React, { useState, useRef,useEffect, useContext } from "react";
 import {
   SafeAreaView,
   StyleSheet,
@@ -13,9 +13,11 @@ import {
 import PhoneInput from "react-native-phone-number-input";
 import {useNavigation} from '@react-navigation/native';
 import {auth} from '../FirebaseConfig';
+import { StateContext } from "../Context/GlobalState";
 
-const App = ({navigation}) => {
+const PhoneScreen = ({navigation}) => {
   // const navigation=useNavigation();
+  const {text} = useContext(StateContext);
   const [value, setValue] = useState("");
   const [formattedValue, setFormattedValue] = useState("");
   const [valid, setValid] = useState(false);
@@ -83,4 +85,4 @@ const App = ({navigation}) => {
   );
 };
 
-export default App;
+export default PhoneScreen;
