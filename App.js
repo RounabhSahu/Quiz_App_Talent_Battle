@@ -13,6 +13,7 @@ import OtpScreen from './Components/OtpScreen';
 import DetailsScreen from './Components/DetailsScreen';
 import Sample from './Components/Sample';
 import LoginScreen from './Components/LoginScreen';
+import ProfileScreen from './Components/ProfileScreen';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
@@ -39,24 +40,26 @@ export default function App() {
     <GlobalState>
       <NavigationContainer>
         <Stack.Navigator>
-          {/* <Stack.Screen
+
+           {/* <Stack.Screen
             name="Splash"
             component={SplashScreen}
             options={{headerShown: false, headerLeft: null,}}
-          /> */}
-          <Stack.Screen
+          />  */}
+          
+          {/* <Stack.Screen
             name="Login"
             component={LoginScreen}
             options={{
               headerShown: false,
               headerLeft: null,
             }}
-          />
+          /> */}
 
           {/* <Stack.Screen name="Phone" component={PhoneScreen} options={{ headerShown: false, headerLeft: null }}/> */}
           {/* <Stack.Screen name='Otp' component={OtpScreen} options={{ headerShown: false, headerLeft: null }}/> */}
           {/*<Stack.Screen name="Home" component={HomeScreen} />*/}
-          {/* <Stack.Screen name='Details' component={DetailsScreen} options={{ headerShown: false, headerLeft: null }}/> */}
+          <Stack.Screen name='Profile' component={ProfileScreen} options={{ headerShown: false, headerLeft: null }}/>
           {/* <Stack.Screen name='Sample' component={Sample} options={{ headerShown: false, headerLeft: null }}/> */}
         </Stack.Navigator>
       </NavigationContainer>

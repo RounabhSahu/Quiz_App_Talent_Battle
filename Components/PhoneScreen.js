@@ -55,6 +55,7 @@ const PhoneScreen = ({navigation}) => {
               backgroundColor: 'rgba(247, 255, 230, 0.851)', 
               padding:2.5,
             }}
+            
             ref={phoneInput}
             defaultValue={value}
             defaultCode="IN"

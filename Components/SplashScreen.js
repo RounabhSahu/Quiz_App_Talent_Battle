@@ -15,7 +15,7 @@ export default function App() {
   const netInfo = useNetInfo();
 
   const handleSignUp=()=>{
-
+    
   }
   const handleLogin =()=>{
     navigation.navigate('Login')
@@ -79,7 +79,9 @@ export default function App() {
           <Image
             source={require('../assets/Buildings.png')}
             className=""
-            style={{width: '100%'}}></Image>
+            style={{width: '100%'}}>
+
+            </Image>
         </View>
         <Text className="w-[80%] py-2 bg-dblue/80 text-red text-center text-lg text-white/80 rounded-xl">
           Professional Quiz Platform for All
